@@ -1,0 +1,108 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+
+.menu {
+    background-color: transparent;
+    
+
+
+    li {
+        padding: 0.4rem 0.7rem;
+        a {
+            // color: $white !important;
+            font-weight: 600;
+
+        }
+    }
+
+    .dark-mode-btn{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+
+        input{
+            width: 0;
+            height: 0;
+            visibility: hidden;
+
+        }
+
+
+
+        label{
+            width: 80px;
+            height: 40px;
+            position: relative;
+            display: block;
+            background: linear-gradient(180deg,#ff3131,#fc6060);
+            border-radius: 40px;
+            box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 0.4), inset 0px -5px 15px rgba(255,255,255,0.4),var(--standard-box-shadow);
+            cursor: pointer;
+            transition:  0.3s ease-in-out;
+
+            &::after{
+                content: "";
+                width: 36px;
+                height: 36px;
+                position: absolute;
+                top: 2.3px;
+                left: 2.3px;
+                background: linear-gradient(180deg,#ffcc89,#d8860b);
+                border-radius: 35px;
+                box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
+                transition:  0.3s ease-in-out;
+            }
+        }
+
+        input:checked + label{
+            background: linear-gradient(180deg,#400101,#ff3131);
+        }
+
+        input:checked + label::after{
+            left: 77px;
+            transform: translateX(-100%);
+            background: linear-gradient(180deg,#777,#3a3a3a);
+        }
+
+        label:active::after{
+            width: 60%;
+        }
+
+        label svg{
+            position: absolute;
+            z-index: 100;
+        }
+
+        label svg.sun{
+            top: 5px;
+            left: 6px;
+            fill: transparent;
+            transition: 0.3s;
+            width: 30px;
+            opacity: 1;
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        input:checked + label svg.sun{
+            opacity: 0;
+        }
+
+        label svg.moon{
+            top: 6px;
+            right: 6px;
+            fill: #7e7e7e;
+            transition: 0.3s;
+            width: 25px;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        input:checked + label svg.moon{
+            opacity: 1;
+        }
+    }
+
+    @include media-breakpoint-down(sm) {
+        
+    }
+}

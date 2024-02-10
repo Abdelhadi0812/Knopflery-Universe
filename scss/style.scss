@@ -1,0 +1,31 @@
+@use 'custom';
+
+// Import section
+@use 'sections/navbar';
+@use 'sections/hero';
+@use 'sections/band';
+@use 'sections/gallery';
+@use 'sections/footer';
+@use 'sections/canvas';
+@use 'sections/introduction';
+@use 'sections/disco';
+@use 'sections/albums';
+@use 'sections/covers';
+
+// Import components
+@use 'components/animations';
+@use 'components/buttons';
+@use 'components/mixins';
+@use 'components/typography';
+
+// Font family
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+

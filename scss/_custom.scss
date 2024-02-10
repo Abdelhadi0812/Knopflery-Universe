@@ -1,0 +1,38 @@
+// Theme colors: 
+$footer: #151414;
+$custom-red: #730202;
+$light-red: #ff3131;
+$navy-blue: #151340;
+$dark-red: #400101;
+
+
+// White and gray colors : 
+$white:    #fff;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black:    #000;
+
+$light:         $gray-100;
+$dark:          $gray-900;
+
+$bg-color: $light;
+
+
+
+$primary: $custom-red;
+$secondary: $light-red;
+
+.justify-content-2{
+    justify-content: space-between;
+}
+
+// Import bootstrap
+
+@import '../node_modules/bootstrap/scss/bootstrap.scss';

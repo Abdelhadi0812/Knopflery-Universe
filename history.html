@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/vendors/css/glightbox.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="icon" href="https://www.direstraits.com/wp-content/themes/direstraits/public/favicon.svg">
+    <title>Knopflery Universe</title>
+</head>
+<body style="overflow-x: hidden;">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark menu ">
+        <div class="container">
+            <a class="navbar-brand" href="home.html">
+                <img src="images/alchemy (1).png" alt="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  active"aria-current="page"  href="history.html">History</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="discography.html">Discography</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="covers.html">My Covers</a>
+                    </li>
+                    <li class="nav-item">
+                        <div class="dark-mode-btn">
+                            <input type="checkbox" id="dark-mode-toggle">
+                            <label for="dark-mode-toggle">
+                                <svg class="sun" viewBox="0 -0.5 25 25" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M15.125 12C15.125 13.4497 13.9497 14.625 12.5 14.625C11.0503 14.625 9.875 13.4497 9.875 12C9.875 10.5503 11.0503 9.375 12.5 9.375C13.9497 9.375 15.125 10.5503 15.125 12Z" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M19.5 12.75C19.9142 12.75 20.25 12.4142 20.25 12C20.25 11.5858 19.9142 11.25 19.5 11.25V12.75ZM17.75 11.25C17.3358 11.25 17 11.5858 17 12C17 12.4142 17.3358 12.75 17.75 12.75V11.25ZM7.25 12.75C7.66421 12.75 8 12.4142 8 12C8 11.5858 7.66421 11.25 7.25 11.25V12.75ZM5.5 11.25C5.08579 11.25 4.75 11.5858 4.75 12C4.75 12.4142 5.08579 12.75 5.5 12.75V11.25ZM13.25 5C13.25 4.58579 12.9142 4.25 12.5 4.25C12.0858 4.25 11.75 4.58579 11.75 5H13.25ZM11.75 6.75C11.75 7.16421 12.0858 7.5 12.5 7.5C12.9142 7.5 13.25 7.16421 13.25 6.75H11.75ZM13.25 17.25C13.25 16.8358 12.9142 16.5 12.5 16.5C12.0858 16.5 11.75 16.8358 11.75 17.25H13.25ZM11.75 19C11.75 19.4142 12.0858 19.75 12.5 19.75C12.9142 19.75 13.25 19.4142 13.25 19H11.75ZM17.9803 7.58033C18.2732 7.28744 18.2732 6.81256 17.9803 6.51967C17.6874 6.22678 17.2126 6.22678 16.9197 6.51967L17.9803 7.58033ZM15.6817 7.75767C15.3888 8.05056 15.3888 8.52544 15.6817 8.81833C15.9746 9.11122 16.4494 9.11122 16.7423 8.81833L15.6817 7.75767ZM9.31833 16.2423C9.61122 15.9494 9.61122 15.4746 9.31833 15.1817C9.02544 14.8888 8.55056 14.8888 8.25767 15.1817L9.31833 16.2423ZM7.01967 16.4197C6.72678 16.7126 6.72678 17.1874 7.01967 17.4803C7.31256 17.7732 7.78744 17.7732 8.08033 17.4803L7.01967 16.4197ZM8.08033 6.51967C7.78744 6.22678 7.31256 6.22678 7.01967 6.51967C6.72678 6.81256 6.72678 7.28744 7.01967 7.58033L8.08033 6.51967ZM8.25767 8.81833C8.55056 9.11122 9.02544 9.11122 9.31833 8.81833C9.61122 8.52544 9.61122 8.05056 9.31833 7.75767L8.25767 8.81833ZM16.7433 15.1827C16.4504 14.8898 15.9756 14.8898 15.6827 15.1827C15.3898 15.4756 15.3898 15.9504 15.6827 16.2433L16.7433 15.1827ZM16.9197 17.4803C17.2126 17.7732 17.6874 17.7732 17.9803 17.4803C18.2732 17.1874 18.2732 16.7126 17.9803 16.4197L16.9197 17.4803ZM19.5 11.25H17.75V12.75H19.5V11.25ZM7.25 11.25H5.5V12.75H7.25V11.25ZM11.75 5V6.75H13.25V5H11.75ZM11.75 17.25V19H13.25V17.25H11.75ZM16.9197 6.51967L15.6817 7.75767L16.7423 8.81833L17.9803 7.58033L16.9197 6.51967ZM8.25767 15.1817L7.01967 16.4197L8.08033 17.4803L9.31833 16.2423L8.25767 15.1817ZM7.01967 7.58033L8.25767 8.81833L9.31833 7.75767L8.08033 6.51967L7.01967 7.58033ZM15.6827 16.2433L16.9197 17.4803L17.9803 16.4197L16.7433 15.1827L15.6827 16.2433Z" fill="#000000"></path> </g></svg>
+                                <svg class="moon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M3.32031 11.6835C3.32031 16.6541 7.34975 20.6835 12.3203 20.6835C16.1075 20.6835 19.3483 18.3443 20.6768 15.032C19.6402 15.4486 18.5059 15.6834 17.3203 15.6834C12.3497 15.6834 8.32031 11.654 8.32031 6.68342C8.32031 5.50338 8.55165 4.36259 8.96453 3.32996C5.65605 4.66028 3.32031 7.89912 3.32031 11.6835Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                            </label>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Intro Section -->
+    <section id="introduction" class="introduction text-dark">
+        <div class="container">
+            <div class="introduction-heading mb-5">
+                <svg class="timeline-intro-image" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 288"><path fill="#1E1E1E" d="m567.553 208.714.865.185c1.472.33 2.92.773 4.363 1.25l2.886.97 1.45.47v11.841l-3.258-2.09c-4.285-2.841-8.975-4.097-14.085-3.535-4.078.448-7.485 2.202-9.527 5.9-2.176 3.937-1.65 7.871 1.112 11.258 1.611 1.977 3.675 3.674 5.79 5.126 2.324 1.598 4.769 3.032 7.244 4.401l1.86 1.016c1.73.935 3.39 1.93 4.944 3.021 6.441 4.52 9.986 12.23 9.796 20.182l-.08 1.533c-2.409 10.054-9.513 14.858-18.896 17.138l-1.511.31c-6.41.632-12.907.332-19.158-1.218l-1.487-.392v-15.793l2.39 2.279a59.51 59.51 0 0 0 2.322 2.123c3.532 3.036 7.547 4.782 12.305 4.328 3.836-.367 6.937-2.101 9.178-5.328 2.444-3.514 2.394-8.263-.21-11.654-1.304-1.697-2.994-3.192-4.758-4.41a88.52 88.52 0 0 0-4.037-2.602l-4.107-2.5c-.681-.42-1.36-.846-2.032-1.282-2.27-1.474-4.446-3.099-6.625-4.709-10.952-8.1-9.43-22.714-1.846-30.631 7.015-7.322 15.622-9.1 25.112-7.187Zm-498.608-.142.016.994c.004.298.002.565-.024.833l-.222 2.065-.503 4.128c-.34 2.79-.643 7.374-.667 10.186-.15 17.126-.105 34.253.002 51.379.01 1.728.258 3.453.548 5.203l.443 2.645-1.108 1.34H56.714v-8.878l-2.638 2.669-.294.31c-9.932 10.597-26.047 6.69-32.29-4.965l-.422-.838-.256-.602-.14-.36-.292-.834a28.443 28.443 0 0 1-1.307-6.798l-.043-.765c-.27-6.443 1.156-12.946 4.623-18.339 4.285-6.665 10.813-11.114 19.518-13.205 2.23-.535 4.587-.531 7.053-.418l3.774.199c.854.038 1.72.067 2.597.067l.143-6.347c.091-5.533-.12-11.14-2.36-16.802l14.565-2.867Zm55.973 1.519c5.741 1.385 10.767 4.054 14.742 8.556 6.093 6.902 6.77 16.884 1.095 24.133-1.305 1.667-2.906 3.105-4.573 4.484l-3.028 2.46-.989.831c-.858.739-1.933 1.225-3.063 1.923 6.476 10.815 14.277 20.377 22.505 29.948l3.55 4.106c2.186-5.781 2.804-11.316 2.87-16.844.166-14.209.252-28.428-.044-42.634-.058-2.819-.467-5.631-.948-8.442l-.884-5.06-.395-2.518-.358-1.983h43.455l-5.944 11.761-1.894-.772c-6.63-2.641-13.28-4.57-20.646-3.584v27.446h25.437l-6.711 10.581-18.658-3.559v29.346c11.28.783 22.045-1.778 33.323-5.526l-5.83 12.81-21.96-.009c-9.327-.003-18.655.004-27.984.06-2.302.014-3.975-.742-5.683-2.192-8.296-7.053-15.256-15.303-21.998-23.747l-6.715-8.47c-.4-.503-.856-.962-1.609-1.34.03 1.77.018 3.542-.012 5.312l-.157 7.086c-.15 7.677-.05 15.359 2.195 23.05H97.904c1.983-9.064 2.11-18.252 1.973-27.455l-.163-9.202-.026-2.3c-.018-2.16.008-4.321.048-6.485l.14-6.5.037-1.988c.113-7.294-.01-14.617-1.425-21.973l-.46-2.188c1.823.018 3.639-.022 5.448-.08l5.408-.188c5.39-.162 10.728-.136 16.034 1.146Zm285.756-1.795 1.522 2.914.322.645 11.198 23.222c5.597 11.613 11.213 23.215 16.938 34.764 1.385 2.79 2.988 5.469 4.653 8.12l3.776 5.943 2.106 3.437h-18.835c-.252-5.72-2.185-10.687-4.406-15.533l-2.265-4.83a109.125 109.125 0 0 1-1.635-3.657h-28.663c-4.04 5.627-7.364 14.378-9.11 24.233h-4.055l-10.07-.018c-3.356-.003-6.713.007-10.068.059-2.012.03-3.556-.536-5.098-1.84-7.32-6.195-13.668-13.296-19.69-20.713l-1.383-1.717-2.053-2.557c-2.402-2.982-4.846-5.95-7.487-8.854.018 1.687-.002 3.374-.038 5.06l-.234 8.432c-.163 7.306.002 14.613 2.185 21.919h-16.252c2.08-8.647 2.342-17.326 2.25-25.991l-.067-4.332-.087-4.33c-.026-1.441-.05-2.883-.064-4.323-.016-1.943.004-3.89.04-5.836l.175-7.802.046-3.175c.062-7.413-.246-14.856-2.132-22.323 1.817.024 3.63-.01 5.435-.067l5.4-.189c5.383-.17 10.721-.162 16.035 1.108 5.14 1.228 9.74 3.488 13.573 7.197 7.608 7.36 8.411 18.445 1.607 26.575-1.347 1.608-3 2.965-4.694 4.28l-2.033 1.577-.999.799c-.354.29-.731.547-1.134.8l-1.977 1.203c5.69 9.61 12.512 18.174 19.765 26.756l5.51 6.455.746-1.075 1.46-2.053c.71-1.01 1.375-2.006 1.945-3.055a2997.658 2997.658 0 0 0 16.379-30.601l6.65-12.644 13.419-25.622 1.394-2.36Zm59.783.866c-2.483 6.911-2.952 13.916-2.988 20.928l.006 3.005.05 4.806.014 3.202-.012 1.598c-.064 5.13-.034 10.261-.02 15.392l-.008 7.696c-.042 6.663.564 13.23 2.465 19.64.055.184.095.372.13.57l.204 1.358H452.74l.386-1.873.405-2.637 1.025-6.172c.433-2.744.785-5.492.847-8.244.311-14.32.303-28.656.01-42.975-.056-2.68-.396-5.355-.819-8.059l-1.003-6.146c-.108-.694-.213-1.39-.308-2.089h17.174Zm-378.338-.022-1.393 7.23a160.992 160.992 0 0 0-.643 3.65c-.302 1.857-.433 3.763-.44 5.645l-.073 17.754c-.033 8.878-.028 17.754.155 26.626.06 2.864.407 5.723.835 8.599l1.013 6.513.308 2.196H74.476c2.595-7.57 3.022-15.251 3.067-22.943l-.017-8.24.021-11.232-.012-11.042.012-4.37c-.021-6.8-.36-13.611-3.041-20.386h17.613Zm446.472.2-5.37 11.458-2.431-.892-1.109-.386c-5.738-1.956-11.622-3.285-18.254-2.48.323 7.08.315 14.135.242 21.176l-.13 10.549-.026 2.862c-.091 11.924.102 23.82 1.86 35.726h-15.421c1.831-13.258 1.893-26.534 1.734-39.807l-.147-10.857c-.074-6.03-.105-12.056.051-18.079a3.495 3.495 0 0 0-.04-.578l-.18-1.172c-4.373-.458-8.632.178-12.822 1.245-1.754.446-3.498.935-5.288 1.454l-7.535 2.21 3.97-12.428h60.896Zm-229.714.057-5.37 11.464c-6.89-2.815-13.757-4.632-21.286-3.946l-.167 1.88a12.66 12.66 0 0 0-.036.906l-.046 24.692c-.008 8.23.01 16.46.106 24.69.04 3.428.322 6.851.651 10.32l.5 5.233.227 2.653h-15.3c2.058-12.817 2.197-25.663 2.056-38.504l-.175-12.84c-.06-5.348-.076-10.694.073-16.035.01-.365-.004-.732-.03-1.113l-.146-1.876c-6.19-.635-11.946.726-17.776 2.445l-5.422 1.643c-.912.274-1.828.546-2.753.807l4.04-12.419h60.854Zm-62.587 25.445.726.38v7.587l-2.481-1.592a49.28 49.28 0 0 0-1.54-.947c-2.674-1.572-5.566-1.923-8.524-1.156-5.088 1.314-7.09 7.183-3.765 11.253 1.246 1.523 2.897 2.766 4.512 3.926 2.872 2.06 5.878 3.932 8.794 5.933 8.986 6.17 6.753 20.151-2.646 24.236-6.218 2.705-12.577 2.21-19.129.837v-10.452l2.144 1.68a30.38 30.38 0 0 0 2.076 1.51c2.96 1.933 6.087 3.038 9.683 1.803 4.763-1.638 6.385-7.057 3.021-10.861-.93-1.05-2.086-1.917-3.274-2.73l-1.428-.957-1.73-1.103-3.515-2.125c-1.164-.718-2.306-1.465-3.385-2.294-9.393-7.217-8.075-19.782 2.66-24.777 5.782-2.69 11.748-3.178 17.8-.15Zm-207.163 6.866c-2.821 1.034-4.725 2.823-6.004 5.56-2.102 4.492-3.065 9.203-2.761 14.098.699 11.2 7.976 18.196 18.896 18.375 2.768.044 5.35-.463 7.38-2.576v-32.714c-5.336-4.757-11.186-5.061-17.511-2.743Zm371-9.083-10.4 21.177h19.956l-9.555-21.177Zm-298.154-17.158v34.646l2.221-.596 2.032-.584c4.36-1.31 8.392-2.977 11.735-6.167 4.91-4.686 5.807-12.007 2.207-17.845-3.987-6.461-10.28-8.418-17.426-9.357l-.769-.097Zm214.338.02v34.602l2.307-.61 1.088-.307c4.148-1.196 7.994-2.679 11.324-5.365 7.068-5.703 7.464-15.767.922-22.086-4.039-3.9-9.005-5.435-14.588-6.116l-1.053-.118Zm33.944-104.019 12.692 32.054 11.66-32.054h8.805l-17.134 43.057-.325.8c-3.475 8.401-7.247 12.675-16.015 12.675-6.902 0-12.058-2.79-12.058-10.605 0-.638 0-1.435.08-2.073l8.17-1.275a13.045 13.045 0 0 0-.238 2.471c0 3.668 1.666 5.741 4.76 5.741 3.57 0 5.631-2.392 7.218-6.458l1.031-2.711-18.324-41.622h9.678Zm89.953-16.744c18.958 0 31.254 10.366 31.254 28.864s-12.296 28.864-31.254 28.864c-18.879 0-31.174-10.366-31.174-28.864s12.295-28.864 31.174-28.864Zm-169.832 15.788c13.802 0 22.448 8.053 22.448 20.97 0 12.837-8.646 20.97-22.448 20.97-13.723 0-22.37-8.133-22.37-20.97 0-12.917 8.647-20.97 22.37-20.97Zm-51.005-10.366.634 11.322h16.262v5.98h-16.262v20.173c0 5.741 2.618 8.612 8.33 8.612 4.362 0 7.852-2.233 7.614-7.416 0-.777-.089-1.375-.2-1.996l-.117-.635 6.108 2.073c.132.487.19.876.23 1.249l.087.904c.476 7.734-5.473 12.04-15.23 12.04-10.233 0-15.706-4.226-15.706-14.033v-20.97h-7.853v-5.9h3.41c4.183 0 5.154-1.846 6.905-9.07l.552-2.333h5.236Zm-40.535 10.366c8.547 0 18.334 2.96 18.558 11.731l.004.308c0 .532 0 1.008-.092 1.798l-.067.515-6.822.319c.08-.638.08-1.196.08-1.515l-.005-.277c-.178-5.384-5.565-7.697-11.26-7.697-5.631 0-10.311 2.313-10.311 6.459 0 4.146 4.24 5.198 9.165 5.838l1.147.142 1.586.16 2.04.242c.69.082 1.387.169 2.083.264l.557.079c6.679.968 13.168 2.916 13.168 10.657 0 8.59-7.516 12.818-18.95 12.915h-.767l-.72-.008c-9.918-.175-18.194-2.82-18.194-10.515 0-1.037.16-2.233.556-3.349l7.139-.478c-.159.558-.238 1.275-.238 1.913 0 5.342 5.235 7.017 11.502 7.017 6.584 0 10.867-2.392 10.867-6.778 0-3.927-4.77-5.065-10.128-5.648l-3.802-.399-1.143-.133c-7.153-.877-14.435-2.753-14.435-10.803 0-7.973 7.615-12.757 18.482-12.757ZM588 128l12 12-12 12-.001-8.999L552 143v-6l35.999.001L588 128Zm-576 0 .001 9.001L48 137v6l-35.999.001L12 152 0 140l12-12Zm83.075-32.319v22.884h34.189V95.68h9.36v55.814h-9.36v-26.073H95.075v26.073h-9.28V95.681h9.28Zm64.57 15.787v40.027h-8.884v-40.027h8.884Zm349.897-17.222c7.889 0 13.855 2.86 14.49 9.417l.04.475c.03.436.024.86.012 1.16l-.025.43-5.712 1.833.042-.416c.038-.423.038-.664.038-1.098l-.004-.238c-.11-3.685-2.793-5.902-7.453-5.902-4.918 0-7.932 2.472-7.932 7.654v3.907h15.071v5.98h-15.071v34.047h-8.885v-34.046h-7.615v-5.98h7.615v-3.987c0-7.256 4.919-13.236 15.39-13.236Zm-175.94 16.664c8.012 0 12.137 5.502 12.137 12.598 0 1.276-.159 2.552-.476 3.748l-7.695 1.913a15.65 15.65 0 0 0 .238-2.71c0-5.104-2.142-8.93-7.298-8.93-5.552 0-8.963 5.66-8.963 11.96v22.006h-8.884v-40.027h6.663l1.348 9.01c2.221-6.458 7.536-9.568 12.93-9.568Zm-53.226 5.502c-8.091 0-13.406 5.183-13.406 15.07 0 9.807 5.315 14.99 13.406 14.99 8.17 0 13.406-5.183 13.406-14.99 0-9.887-5.236-15.07-13.406-15.07Zm169.832-14.83c-12.136 0-21.497 6.936-21.497 22.006s9.36 22.007 21.497 22.007c12.216 0 21.576-6.937 21.576-22.007s-9.36-22.007-21.576-22.007ZM564 104v9.001l36-.001v6l-36 .001V128l-12-12 12-12Zm-528 0 12 12-12 12v-8.999L0 119v-6l36 .001V104Zm123.883-6.086v6.618h-9.36v-6.618h9.36Zm26.494-83.083.547.006c8.937.208 17.698 5.569 17.698 20.884 0 14.671-8.964 21.05-19.117 21.05-5.553 0-11.82-2.233-15.23-7.416v21.848h-8.806V15.787h6.98l1.111 8.452c3.65-6.937 10.233-9.408 16.817-9.408Zm338.395 0 .708.006c11.15.194 19.52 5.04 19.52 17.535 0 1.276-.08 3.03-.238 4.545h-31.809c0 9.01 4.442 13.714 12.692 13.714l.552-.006c5.507-.122 10.633-2.105 10.633-8.047 0-.513-.04-.944-.093-1.323l-.066-.431 7.536.797c.08.479.158 1.037.158 1.754 0 9.489-9.122 13.396-19.434 13.396-13.247 0-21.02-7.416-21.02-20.89 0-12.838 7.535-21.05 20.861-21.05Zm-176.733 0 .708.006c11.15.194 19.52 5.04 19.52 17.535 0 1.276-.08 3.03-.238 4.545h-31.81c0 9.01 4.443 13.714 12.693 13.714l.551-.006c5.507-.122 10.633-2.105 10.633-8.047 0-.718-.08-1.276-.158-1.754l7.535.797c.08.479.159 1.037.159 1.754 0 9.489-9.122 13.396-19.434 13.396-13.247 0-21.021-7.416-21.021-20.89 0-12.838 7.536-21.05 20.862-21.05Zm-92.492 0c13.803 0 22.45 8.053 22.45 20.97 0 12.837-8.647 20.97-22.45 20.97-13.723 0-22.369-8.133-22.369-20.97 0-12.917 8.646-20.97 22.37-20.97ZM464.17.08v23.68c3.808-6.936 10.312-8.93 15.389-8.93 9.201 0 15.071 5.024 15.071 14.672v26.312h-8.884V30.538c0-5.82-3.649-8.93-9.36-8.93-6.187 0-12.216 4.943-12.216 12.678v21.528h-8.884V.08h8.884ZM446.876 0v7.415h-21.258v48.399h-9.36V7.415h-21.26V0h51.878ZM308.774 15.23c8.011 0 12.136 5.5 12.136 12.597 0 1.276-.158 2.552-.476 3.748l-7.694 1.913a15.65 15.65 0 0 0 .238-2.71c0-5.104-2.142-8.93-7.298-8.93-5.553 0-8.963 5.66-8.963 11.96v22.006h-8.885V15.787h6.663l1.349 9.01c2.221-6.458 7.536-9.568 12.93-9.568ZM223.342 0v55.814h-8.884V0h8.884Zm-103.2 15.787 11.343 13.475 11.581-13.475h9.36l-16.023 18.738 18.165 21.289h-11.026l-13.247-15.708-13.326 15.708h-9.36l18.006-20.97-16.579-19.057h11.106ZM102.77 0v7.256H66.28V23.84h32.365v6.857H66.281v17.86h36.489v7.256H57V0h45.77Zm152.777 20.73c-8.09 0-13.405 5.184-13.405 15.07 0 9.808 5.314 14.99 13.405 14.99 8.17 0 13.406-5.182 13.406-14.99 0-9.886-5.235-15.07-13.406-15.07Zm-72.184.48c-6.029 0-13.168 4.145-13.168 12.438v4.305c0 8.133 6.743 12.519 12.85 12.519 6.267 0 12.534-3.03 12.534-14.592 0-11.402-6.108-14.67-12.216-14.67Zm164.835-.559c-6.664 0-11.66 3.827-11.899 11.88h23.163l.085-.56c.042-.293.073-.586.073-1.034 0-7.336-5.156-10.286-11.422-10.286Zm176.733 0c-6.663 0-11.66 3.827-11.898 11.88h23.162l.085-.56c.043-.293.074-.586.074-1.034 0-7.336-5.156-10.286-11.423-10.286Z"></path></svg>
+            </div>
+            <div class="introduction-content mt-5 mb-5">
+                <h3 class="display-3 text-center mt-5 mb-5">
+                    Dire Straits : A journey through time
+                </h3>
+                <div class="row ">
+                    <div class="col-md-6">
+                        <p class="lead">
+                            Welcome to the historical journey of Dire Straits, a band that left an indelible mark on the landscape of rock music. Formed in 1977 by the legendary Mark Knopfler, Dire Straits embarked on a musical odyssey that spanned decades and captivated audiences worldwide.
+                        </p>
+
+                        <p class="lead">
+                            The roots of Dire Straits trace back to the eclectic musical scene of late '70s London, where a group of talented musicians converged under the visionary leadership of Knopfler. The distinctive fingerstyle guitar playing of Mark Knopfler, combined with insightful lyrics and a unique blend of rock, blues, and folk influences, defined the unmistakable sound of Dire Straits.
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <p class="lead">
+                            From the iconic riffs of "Sultans of Swing" to the storytelling brilliance of "Brothers in Arms," this retrospective is a celebration of a band that dared to be different. Experience the magic, relive the memories, and immerse yourself in the sonic tapestry that is Dire Straits.
+                        </p>
+
+                        <p class="lead">
+                            From the iconic riffs of "Sultans of Swing" to the storytelling brilliance of "Brothers in Arms," this retrospective is a celebration of a band that dared to be different. Experience the magic, relive the memories, and immerse yourself in the sonic tapestry that is Dire Straits.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- History section -->
+    <section class="timeline">
+        <div class="container timeline-wrapper">
+            <div class="timeline-year">
+                <div class="timeline-heading text-center mb-5  fw-bold ">
+                    <h1>1977</h1>
+                </div>
+                <div class="timeline-container mb-5">
+                    <div class="row">
+                        <div class="col-md-6 col-left">
+                            <img src="images/History/timeline-1.png" alt="1977">
+                        </div>
+                        <div class="col-md-6 col-right rounded border border-primary shadow">
+                            <p class="lead">1 March</p>
+                            <h3>Founding of the band</h3>
+                            <div class="timeline-content">
+                                <p>The founding line up of Dire Straits begin rehearsing at Farrer House in Deptford.
+                                </p>
+                                <p>
+                                    Mark Knopfler – Vocals, Guitar (b. 12 Aug 1949 in Glasgow)
+                                </p>
+                                <p>
+                                    John Illsley – Bass (b. 24 June 1949 in Leicester)
+                                </p>
+                                <p>
+                                    David Knopfler – Guitar (b. 27 Dec 1952 in Glasgow)
+                                </p>
+                                <p>
+                                    Pick Withers – Drums (b. 4 April 1948 in Leicester)
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-container mb-5">
+                    <div class="row">
+                        <div class="col-md-6 col-left">
+                            <img src="images/History/timeline-2.png" alt="1977">
+                        </div>
+                        <div class="col-md-6 col-right rounded border border-primary shadow">
+                            <p class="subtitle">26 June</p>
+                            <h3>Crossfield Estate Deptford Festival</h3>
+                            <div class="timeline-content">
+                                <p>
+                                    Dire Straits play their first show (as Café Racers), outdoors, as part of the Crossfields Festival. The set includes ‘Sultans Of Swing’, ‘Down To The Waterline’, and ‘Southbound Again’, as well covers of songs by Ry Cooder and Brenda Lee.
+                                </p>
+                                <p>
+                                    (Photo courtesy of Glenda Bogdanovs)
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-container mb-5">
+                    <div class="row">
+                        <div class="col-md-6 col-left">
+                            <img src="images/History/timeline-3.png" alt="1977">
+                        </div>
+                        <div class="col-md-6 col-right rounded border border-primary shadow">
+                            <p class="subtitle">24 July</p>
+                            <h3>First Reconrding Session</h3>
+                            <div class="timeline-content">
+                                <p>
+                                    Dire Straits record their first demo at Pathway Studios, including an early version of ‘Sultans Of Swing’, which BBC Radio London DJ Charlie Gillett would later play on-air.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-container mb-5">
+                    <div class="row">
+                        <div class="col-md-6 col-left">
+                            <img src="images/History/timeline-4.png" alt="1977">
+                        </div>
+                        <div class="col-md-6 col-right rounded border border-primary shadow">
+                            <p class="subtitle">28 July</p>
+                            <h3>First Show as Dire Straits</h3>
+                            <div class="timeline-content">
+                                <p>
+                                    The band performs for the first time as Dire Straits, supporting Squeeze at the Albany Empire in Deptford.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-container mb-5">
+                    <div class="row">
+                        <div class="col-md-6 col-left">
+                            <img src="images/History/timeline-5.png" alt="1977">
+                        </div>
+                        <div class="col-md-6 col-right rounded border border-primary shadow">
+                            <p class="subtitle">31 July</p>
+                            <h3>Demo played on BBC Radio</h3>
+                            <div class="timeline-content">
+                                <p>
+                                    The demo recording of ‘Sultans Of Swing’ is played on the BBC Radio London program, Honky Tonk.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-container mb-5">
+                    <div class="row">
+                        <div class="col-md-6 col-left">
+                            <img src="images/History/timeline-6.png" alt="1977">
+                        </div>
+                        <div class="col-md-6 col-right rounded border border-primary shadow">
+                            <p class="subtitle">12 December</p>
+                            <h3>Singing with Phonogram</h3>
+                            <div class="timeline-content">
+                                <p>
+                                    Dire Straits sign with Phonogram Records. The band also performs a number of gigs in and around London that autumn, including regular appearances at The Rock Garden and The Hope And Anchor.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline-year">
+                <div class="timeline-heading text-center mb-5  fw-bold  ">
+                    <h1>1978</h1>
+                </div>
+                <div class="timeline-container mb-5">
+                    <div class="row">
+                        <div class="col-md-6 col-left">
+                            <img src="images/History/timeline-7.png" alt="1977">
+                        </div>
+                        <div class="col-md-6 col-right rounded border border-primary shadow">
+                            <p class="subtitle">20 January</p>
+                            <h3>First tour, supporting Talking Heads</h3>
+                            <div class="timeline-content">
+                                <p>
+                                    Dire Straits’ first tour, as support for Talking Heads, begins in Sheffield.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-container mb-5">
+                    <div class="row">
+                        <div class="col-md-6 col-left">
+                            <img src="images/History/timeline-11.png" alt="1977">
+                        </div>
+                        <div class="col-md-6 col-right rounded border border-primary shadow">
+                            <p class="subtitle">13 February</p>
+                            <h3>Recording session for first album begins</h3>
+                            <div class="timeline-content">
+                                <p>
+                                    Recording for Dire Straits’ debut album begins at Basing Street Studios.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-container mb-5">
+                    <div class="row">
+                        <div class="col-md-6 col-left">
+                            <img src="images/History/timeline-8.png" alt="1977">
+                        </div>
+                        <div class="col-md-6 col-right rounded border border-primary shadow">
+                            <p class="subtitle">3 May</p>
+                            <h3>Second tour, supporting Climax Blues Band</h3>
+                            <div class="timeline-content">
+                                <p>
+                                    The band hits the road again, opening for Climax Blues Band. Another tour supporting Styx follows, as well as concerts supporting Gerry Rafferty and Elvis Costello.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-container mb-5">
+                    <div class="row">
+                        <div class="col-md-6 col-left">
+                            <img src="images/History/timeline-9.png" alt="1977">
+                        </div>
+                        <div class="col-md-6 col-right rounded border border-primary shadow">
+                            <p class="subtitle">15 May</p>
+                            <h3>The Old Grey Whistle Test</h3>
+                            <div class="timeline-content">
+                                <p>
+                                    Dire Straits make their television debut, performing ‘Sultans Of Swing’ and ‘Lions’ on The Old Grey Whistle Test.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-container mb-5">
+                    <div class="row">
+                        <div class="col-md-6 col-left">
+                            <img src="images/History/timeline-10.png" alt="1977">
+                        </div>
+                        <div class="col-md-6 col-right rounded border border-primary shadow">
+                            <p class="subtitle">9 June</p>
+                            <h3>First Dire Straits headlining tour</h3>
+                            <div class="timeline-content">
+                                <p>
+                                    The band begins their first headlining tour in Wolverhampton, spanning 55 shows in the UK and Europe.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-container mb-5">
+                    <div class="row">
+                        <div class="col-md-6 col-left">
+                            <img src="images/History/timeline-11.png" alt="1977">
+                        </div>
+                        <div class="col-md-6 col-right rounded border border-primary shadow">
+                            <p class="subtitle">9 June</p>
+                            <h3>First album Dire Straits released</h3>
+                            <div class="timeline-content">
+                                <p>
+                                    The band’s self-titled debut is released on Vertigo Records (a division of Phonogram). Produced by Muff Winwood, <em>Dire Straits</em>  includes the hit ‘Sultans Of Swing’, and peaks at #5 on the UK albums chart.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline-year">
+                <div class="timeline-heading text-center mb-5  fw-bold  ">
+                    <h1>1979</h1>
+                </div>
+                <div class="timeline-container mb-5">
+                    <div class="row">
+                        <div class="col-md-6 col-left">
+                            <img src="images/History/timeline-13.png" alt="1977">
+                        </div>
+                        <div class="col-md-6 col-right rounded border border-primary shadow">
+                            <p class="subtitle">11 February</p>
+                            <h3>Communiqué Tour</h3>
+                            <div class="timeline-content">
+                                <p>
+                                    The Communiqué tour begins in Rotterdam, Netherlands. Consisting of 116 shows in 14 countries, the tour includes their first performances in North America – during which they often performed twice a day.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-container mb-5">
+                    <div class="row">
+                        <div class="col-md-6 col-left">
+                            <img src="images/History/timeline-14.png" alt="1977">
+                        </div>
+                        <div class="col-md-6 col-right rounded border border-primary shadow">
+                            <p class="subtitle">5 June</p>
+                            <h3>Communiqué Released</h3>
+                            <div class="timeline-content">
+                                <p>
+                                    The second album by Dire Straits, <em>Communiqué</em> , is released. Produced by Barry Beckett and Jerry Wexler, the album hit #1 in several European countries and peaked at #5 in the UK.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline-year">
+                <div class="timeline-heading text-center mb-5  fw-bold  ">
+                    <h1>1980</h1>
+                </div>
+                <div class="timeline-container mb-5">
+                    <div class="row">
+                        <div class="col-md-6 col-left">
+                            <img src="images/History/alan clark.jpg" alt="1977">
+                        </div>
+                        <div class="col-md-6 col-right rounded border border-primary shadow">
+                            <p class="subtitle">2 January</p>
+                            <h3>Alan Clark Joins</h3>
+                            <div class="timeline-content">
+                                <p>
+                                    Alan Clark, born 5 March 1952 in Durham, joins the band on Keyboards (80-95)
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-container mb-5">
+                    <div class="row">
+                        <div class="col-md-6 col-left">
+                            <img src="images/History/timeline-15.png" alt="1977">
+                        </div>
+                        <div class="col-md-6 col-right rounded border border-primary shadow">
+                            <p class="subtitle">20 June</p>
+                            <h3>Recording for Making Movies begins</h3>
+                            <div class="timeline-content">
+                                <p>
+                                    Sessions for the third Dire Straits album, <em>Making Movies</em> , begin at Power Station in New York. Photo by Guido Harari.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-container mb-5">
+                    <div class="row">
+                        <div class="col-md-6 col-left">
+                            <img src="images/david_knopfler.jpeg" alt="1977">
+                        </div>
+                        <div class="col-md-6 col-right rounded border border-primary shadow">
+                            <p class="subtitle">25 July</p>
+                            <h3>David Knopfler leaves</h3>
+                            <div class="timeline-content">
+                                <p>
+                                    David Knopfler leaves the band to pursue a solo career. His debut album, <em>Release</em> , is issued in 1983.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-container mb-5">
+                    <div class="row">
+                        <div class="col-md-6 col-left">
+                            <img src="images/History/timeline-15.png" alt="1977">
+                        </div>
+                        <div class="col-md-6 col-right rounded border border-primary shadow">
+                            <p class="subtitle">17 October</p>
+                            <h3>Making Movies released</h3>
+                            <div class="timeline-content">
+                                <p>
+                                    <em>Making Movies</em> , Dire Straits’ third album, is released. Produced by Jimmy Iovine and Mark, <em>Making Movies</em>  peaks at #4 on the UK charts and includes the singles ‘Romeo And Juliet’, ‘Skateaway’ and ‘Tunnel Of Love’.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline-year">
+                <div class="timeline-heading text-center mb-5  fw-bold  ">
+                    <h1>1982</h1>
+                </div>
+                <div class="timeline-container mb-5">
+                    <div class="row">
+                        <div class="col-md-6 col-left">
+                            <img src="images/History/timeline-18.png" alt="1977">
+                        </div>
+                        <div class="col-md-6 col-right rounded border border-primary shadow">
+                            <p class="subtitle">27 February</p>
+                            <h3>Recordings for Love Over Gold begin</h3>
+                            <div class="timeline-content">
+                                <p>
+                                    Sessions for the next Dire Straits album begin at the Power Station in New York. Pick Withers will leave the band shortly after recording is complete.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-container mb-5">
+                    <div class="row">
+                        <div class="col-md-6 col-left">
+                            <img src="images/History/love over gold.jpeg" alt="1977">
+                        </div>
+                        <div class="col-md-6 col-right rounded border border-primary shadow">
+                            <p class="subtitle">24 September</p>
+                            <h3>Love Over Gold released</h3>
+                            <div class="timeline-content">
+                                <p>
+                                    Produced by Mark Knopfler, <em>Love Over Gold</em>  is released. Their first UK #1 album, <em>Love Over Gold</em>  includes the singles ‘Private Investigations’ and ‘Industrial Disease’ and propelled the band to their first BRIT, for Best British Group, the following year.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline-year">
+                <div class="timeline-heading text-center mb-5  fw-bold  ">
+                    <h1>1984</h1>
+                </div>
+                <div class="timeline-container mb-5">
+                    <div class="row">
+                        <div class="col-md-6 col-left">
+                            <img src="images/History/timeline-21.png" alt="1977">
+                        </div>
+                        <div class="col-md-6 col-right rounded border border-primary shadow">
+                            <p class="subtitle">16 March</p>
+                            <h3>Alchemy released</h3>
+                            <div class="timeline-content">
+                                <p>
+                                    <em>Alchemy : Dire Straits Live</em> , the band’s first official live album, is released featuring recordings made over two nights at London’s Hammersmith Odeon on the Love Over Gold tour.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline-year">
+                <div class="timeline-heading text-center mb-5  fw-bold ">
+                    <h1>1985</h1>
+                </div>
+                <div class="timeline-container mb-5">
+                    <div class="row">
+                        <div class="col-md-6 col-left">
+                            <img src="images/History/timeline-23.png" alt="1977">
+                        </div>
+                        <div class="col-md-6 col-right rounded border border-primary shadow">
+                            <p class="subtitle">25 April</p>
+                            <h3>Brothers In Arms Tour</h3>
+                            <div class="timeline-content">
+                                <p>
+                                    The marathon tour in support of <em>Brothers In Arms</em>  begins in Yugoslavia. The tour lasts a full year, encompassing 248 shows in 23 countries, including a remarkable 14 consecutive nights at Wembley Arena.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-container mb-5">
+                    <div class="row">
+                        <div class="col-md-6 col-left">
+                            <img src="images/History/timeline-24.png" alt="1977">
+                        </div>
+                        <div class="col-md-6 col-right rounded border border-primary shadow">
+                            <p class="subtitle">17 May</p>
+                            <h3>Brothers In Arms is released</h3>
+                            <div class="timeline-content">
+                                <p>
+                                    <em>Brother In Arms</em>  is released on Compact Disc. Produced by Mark Knopfler and Neil Dorfsman, the album features the hit singles ‘Money For Nothing’, ‘Walk Of Life’, and ‘So Far Away’. The record-breaking album goes to #1 in a dozen countries, eventually selling more than 30 million copies worldwide.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-container mb-5">
+                    <div class="row">
+                        <div class="col-md-6 col-left">
+                            <img src="images/History/timeline-25.png" alt="1977">
+                        </div>
+                        <div class="col-md-6 col-right rounded border border-primary shadow">
+                            <p class="subtitle">1 June</p>
+                            <h3>‘Money For Nothing’ video released</h3>
+                            <div class="timeline-content">
+                                <p>
+                                    The groundbreaking, computer-animated video for ‘Money For Nothing’ is released. The video will help drive the single to the top of the US singles charts. It goes on to win Video of the Year and Best Group Video at the 1986 MTV Video Awards , and is the first video shown when MTV Europe launches in 1987.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-container mb-5">
+                    <div class="row">
+                        <div class="col-md-6 col-left">
+                            <img src="images/History/timeline-26.png" alt="1977">
+                        </div>
+                        <div class="col-md-6 col-right rounded border border-primary shadow">
+                            <p class="subtitle">13 July</p>
+                            <h3>Live Aid</h3>
+                            <div class="timeline-content">
+                                <p>
+                                    Dire Straits perform an afternoon set at Wembley Stadium as part of the historic Live Aid benefit concert, which is seen by a global television audience of nearly 2 billion people. Sting guests on ‘Money For Nothing’. The band walks across the car park to play their own headlining show at Wembley Arena the same night.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="brief-note text-center mb-5">
+                <h5 class="display-2 fw-bold">Brief Note :</h5>
+                
+                <p class="lead">
+                    <i class="fas fa-quote-left"></i>
+                    Delving into the rich tapestry of Dire Straits' journey, this snapshot captures just a glimpse of their remarkable achievements throughout the years. The band's history is a treasure trove, filled with countless moments of musical brilliance and cultural impact. While the highlights showcased here provide a taste of their legacy, there's so much more to explore. Due to space constraints, not every chapter could be unveiled, but each year is a chapter worth discovering in the expansive narrative of Dire Straits.
+                    <i class="fas fa-quote-right"></i>
+                </p>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer section -->
+    <footer class="footer">
+        <!-- Company info -->
+        <div class="container">
+            <div class="row text-white mt-3 pb-3 justify-content-2">
+                <div class="col-12 col-sm-6 col-lg-6">
+                    <h5 class="text-capitalize fw-bold">Knopflery Universe</h5>
+                    <hr class="bg-white d-inline-block mb-4" style="width: 60px; height: 2px;">
+                    <p class="lh-lg">A basic website dedicated to people intersted in dire straits and Mark Knopfler history, and enjoy their unique sounding music. More content shall be added as we go along.</p>
+                </div>
+                <div class="col-12 col-sm-3 col-lg-3 mb-4 ">
+                    <h5 class="text-capitalize fw-bold">Navigation links</h5>
+                    <hr class="bg-white d-inline-block mb-4" style="width: 60px; height: 2px;">
+                    <ul class="list-inline company-list">
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="history.html">History</a></li>
+                        <li><a href="discography.html">Discography</a></li>
+                        <li><a href="covers.html">My Covers</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Social media content -->
+        <div class="footer-sm" style="background-color: #212121;">
+            <div class="container">
+                <div class="row py-4 text-center text-white">
+                    <div class="col-lg-5 col-md-6 mb-4 mb-md-0">
+                        Follow on social media.
+                    </div>
+                    <div class="col-lg-7 col-md-6">
+                        <a href="https://www.facebook.com/DireStraits"><i class="fab fa-facebook"></i></a>
+                        <a href="https://open.spotify.com/artist/0WwSkZ7LtFUFjGjMZBMt6T"><i class="fab fa-spotify"></i></a>
+                        <a href="https://www.instagram.com/direstraitshq/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/channel/UC9HKX4sDEYdgDEQTV9iy9yw"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Copyright -->
+        <footer class="footer-bottom pt-5 pb-5">
+            <div class="container">
+                <div class="row text-center text-white">
+                    <div class="col-12">
+                        <div class="footer-bottom__copyright">
+                            © Copyright 2024 
+                            <a href="#">Knopflery Universe</a>
+                             | Created by 
+                            <a href="#">
+                                Abdelhadi
+                            </a>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </footer>
+
+    <!-- Canvas Gradient -->
+    <canvas id="canvas" width="32px" height="32px"></canvas>
+
+    <!-- Scripts -->
+    <script src="gradient.js"></script>
+
+    <!-- Back to top btn -->
+    <a href="#" class="shadow btn-primary rounded-circle back-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- App js -->
+    <script src="app.js"></script>
+</body>
+</html>

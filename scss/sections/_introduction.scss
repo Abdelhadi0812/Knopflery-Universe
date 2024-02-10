@@ -1,0 +1,114 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+
+.introduction {
+    width: 100%;
+    height: 100%;
+    padding: 7rem 0 0 0;
+    position: relative;
+
+    &-heading {
+        width: 100%;
+        height: 60vh;
+        display: flex;
+        justify-content: center;
+    }
+
+    &::before{
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 136px;
+        background-image: url('https://www.direstraits.com/wp-content/uploads/2022/10/dire-straits-timeline-bg-2.jpg');
+        transform: skewY(-8deg);
+        z-index: -1;
+    }
+}
+
+.timeline {
+    width: 100%;
+    height: 100%;
+    margin-top: 10rem;
+    
+    .timeline-heading h1{
+        text-align: center;
+        font-weight: bold;
+        position: relative;
+
+        &::before,
+        &::after{
+            content: '';
+            position: absolute;
+            top: 0;
+            width: 20px;
+            height: 20px;
+            background-color: $dark;
+            transform: rotate(45deg) translateY(100%);
+
+            @include media-breakpoint-down(sm){
+                transform: rotate(45deg) translateY(60%)
+            }
+
+            
+
+        }
+
+        &::before{
+            left: calc(50% - 80px);
+        }
+
+        &::after{
+            right: calc(50% - 100px);
+        }
+
+        [data-bs-theme="dark"] &::before,
+        [data-bs-theme="dark"] &::after {
+            background-color: $light;
+        }
+    }
+
+
+
+    img{
+        max-width: 340px;
+    }
+
+    .col-right {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        @include gradient;
+    }
+
+    .col-left {
+        margin-bottom: 3rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    @include media-breakpoint-up(lg){
+        .col-right {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+            // @include gradient;
+            color: $light;
+        }
+    
+        .col-left {
+            margin-bottom: 3rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+    
+        }
+    }
+}
